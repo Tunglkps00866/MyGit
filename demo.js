@@ -45,3 +45,49 @@ function myfunction3()
 {
     alert("Hello\nHow are you?");
 }
+//Bai tap 09
+if (new Date().getHours()<18){
+    document.getElementById("date").innerHTML="Good Day!";
+}
+//Bai tap 10
+function myfunction4()
+{
+    var hour = new Date().getHours();
+    var greeting;
+    if (hour<18)
+    {
+        greeting="Good Day!";
+    } 
+    else 
+    {
+        greeting="Good Evening!";
+    }
+    document.getElementById("date1").innerHTML=greeting;
+}
+//Bai tap 11
+function myfunction5()
+{
+    var D
+    switch (new Date().getDay())
+    {
+        case 0:
+        D = "Sunday";
+        break;
+        case 1:
+        D = "Monday";
+        break;
+        case 2:
+        D = "Tuesday";
+        break;
+        case 3:
+        D = "Wednesday";
+        break;
+        case 4:
+        D = "Thursday";
+        break;
+        case 5;
+        D = "Friday";
+        break;
+    }
+    document.getElementById("date2").innerHTML="Today" + D;
+}
