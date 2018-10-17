@@ -85,8 +85,11 @@ function myfunction5()
         case 4:
         D = "Thursday";
         break;
-        case 5;
+        case 5:
         D = "Friday";
+        break;
+        case 6:
+        D = "Saturday";
         break;
     }
     document.getElementById("date2").innerHTML="Today" + D;
