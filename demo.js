@@ -94,3 +94,149 @@ function myfunction5()
     }
     document.getElementById("date2").innerHTML="Today" + D;
 }
+//Bai tap 12
+
+function myfunction6()
+{
+    var age, voteable;
+    age = document.getElementById("age").value;
+    voteable = (age <18)? "Too young" : "Old enough";
+    document.getElementById("Age").innerHTML=voteable+" to vote."
+}
+
+//Bai tap 13
+function myfunction7()
+{
+    var text ="";
+    var i;
+    for (i=0;i<5;i++)
+    {
+        text +="The number is " + i + "<br>";
+    }
+    document.getElementById("data").innerHTML=text;
+}
+//Bai tap 14
+
+    var txt="";
+    var person = {fname:"John", lname:"Doe", age:25};
+    var x;
+    for(x in person)
+    {
+        txt += person [x] + " ";
+    }
+    document.getElementById("data1").innerHTML=txt;
+// Bai tap 15
+function myfunction8()
+{
+    var text1 ="";
+    var i = 0;
+    while (i <10) 
+    {
+        text1 += "<br>The Number is "+ i;
+        i++;
+    }
+    document.getElementById("data2").innerHTML=text1;
+}
+//Bai tap 16
+function myfunction9()
+{
+    var text2 ="";
+    var I = 0;
+    do
+    {
+        text2 += "<br>The Number is "+ I;
+        I++;
+    }
+    while (I <10)  
+    document.getElementById("data3").innerHTML=text2;
+}
+
+//Bai tap 17
+var cars = ["Audi","Volvo","BMW"];
+document.getElementById("Car").innerHTML=cars;
+//Bai tap 18
+var cars1 = new Array("Audi","Volvo","BMW");
+document.getElementById("Car1").innerHTML=cars1[2];
+//Bai tap 19
+var fruit = ["Apple","Orange","Mango","Banana"];
+document.getElementById("data4").innerHTML=fruit.length;
+//Bai tap 20
+function myfunction10()
+{
+    var index;
+    var text3= "<ul>";
+    var fruit1=["Banana","Mango","Apple","Orange"];
+    for (index=0;index < fruit1.length; index++)    
+    {
+        text3 += "<li>" + fruit1[index] + "</li>";
+    }
+    text3 +="</ul>";
+    document.getElementById("data5").innerHTML=text3;
+}
+//Bai tap 21
+var fruit2= ["Banana","Apple","Orange","Mango"];
+document.getElementById("data6").innerHTML=fruit2.join(" * ");
+//Bai tap 22
+var fruit3= ["Banana","Apple","Orange","Mango"];
+document.getElementById("data7").innerHTML=fruit3;
+function myfunction11()
+{
+    document.getElementById("data7").innerHTML=fruit3.pop();
+}
+//Bai tap 23
+var fruit4= ["Banana","Apple","Orange","Mango"];
+document.getElementById("data8").innerHTML=fruit4;
+function myfunction12()
+{
+    fruit4.push("Kiwi");
+    document.getElementById("data8").innerHTML=fruit4;
+}
+//Bai tap 24
+var fruit5 = ["Banana","Apple","Orange","Mango"];
+document.getElementById("data9").innerHTML=fruit5;
+function myfunction13()
+{
+    fruit5.shift();
+    document.getElementById("data9").innerHTML=fruit5;
+}
+//Bai tap 25
+var fruit6 = ["Banana","Apple","Orange","Mango"];
+document.getElementById("data10").innerHTML=fruit6;
+function myfunction14()
+{
+    fruit6.splice(2,0,"Lemon","Kiwi");
+    document.getElementById("data10").innerHTML=fruit6;
+}
+//Bai tap 26
+var fruit7 = ["Banana","Apple","Orange","Mango"];
+document.getElementById("data11").innerHTML=fruit7;
+function myfunction15()
+{
+    fruit7.splice(1,2);
+    document.getElementById("data11").innerHTML=fruit7;
+}
+//Bai tao 27
+var fruit8 = ["Banana","Apple","Orange","Mango"];
+document.getElementById("data12").innerHTML=fruit8;
+function myfunction16()
+{
+    fruit8.sort();
+    document.getElementById("data12").innerHTML=fruit8;
+}
+//Bai tap 28
+var fruit9 = ["Banana","Apple","Orange","Mango"];
+document.getElementById("data13").innerHTML=fruit9;
+function myfunction17()
+{
+    fruit9.reverse();
+    document.getElementById("data13").innerHTML=fruit9;
+}
+//Bai tap 29
+function myfunction18()
+{
+    var myboys=["David","John"];
+    var mygirls=["Christine","Ana","Joe"];
+    var mychil=mygirls.concat(myboys);
+    document.getElementById("chil").innerHTML=mychil;
+}
+
