@@ -98,9 +98,9 @@ function myfunction5()
 
 function myfunction6()
 {
-    var age, voteable;
-    age = document.getElementById("age").value;
-    voteable = (age <18)? "Too young" : "Old enough";
+    var age1, voteable;
+    age1 = document.getElementById("age").value;
+    voteable = (age1 <18)? "Too young" : "Old enough";
     document.getElementById("Age").innerHTML=voteable+" to vote."
 }
 
@@ -240,3 +240,41 @@ function myfunction18()
     document.getElementById("chil").innerHTML=mychil;
 }
 
+//Bai tap 30
+function myfunction19()
+{
+    document.write("Hello there!");
+}
+
+//Bai tap 31
+ function myfunction20(Ten,Tuoi)
+ {
+     document.write(Ten+" is "+Tuoi+" years old ") 
+ }
+
+ //Bai tap 32
+ function myfunction21(a1,b1)
+ {
+     return a1*b1;
+ }
+ document.getElementById("data14").innerHTML=myfunction21(4,3)
+
+ //Bai tap 33
+
+ var connguoi={Ten1:"John",Ho1:"Smith",Tuoi1:40,Maumat:"Blue"};
+ document.getElementById("data15").innerHTML=connguoi.Ten1 +" is "+connguoi.Tuoi1+" years old"
+
+ //Bai tap 34
+ var connguoi1=
+    {
+    Ten2:"Johny",
+    Ho2:"Smith",
+    Tuoi2:70,
+    id:5566, 
+    fullname:function()
+        {
+            return this.Ten2+" "+this.id;
+        }
+    }
+document.getElementById("data16").innerHTML=connguoi1.fullname();
+ 
