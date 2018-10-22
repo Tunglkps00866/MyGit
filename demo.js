@@ -279,7 +279,7 @@ function myfunction19()
 document.getElementById("data16").innerHTML=connguoi1.fullname();
  
 //Bai tap 35
-document.write("Screen resolution:"+window.screen.width+"x"+window.screen.height)
+
 
 //Bai tap 36
 function a()
