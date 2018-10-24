@@ -119,10 +119,10 @@ function myfunction7()
 
     var txt="";
     var person = {fname:"John", lname:"Doe", age:25};
-    var x;
-    for(x in person)
+    var x1;
+    for(x1 in person)
     {
-        txt += person [x] + " ";
+        txt += person [x1] + " ";
     }
     document.getElementById("data1").innerHTML=txt;
 // Bai tap 15
@@ -284,9 +284,168 @@ document.getElementById("data16").innerHTML=connguoi1.fullname();
 //Bai tap 36
 function a()
 {
-    window.open('http://google.com','_blank');
+    window.open=('https://google.com');
 }
 function b()
 {
     window.close();
+}
+//Bai tap 37
+function curr_location()
+{
+    alert(location.href);
+}
+function change_location()
+{
+    window.location="https://google.com";
+}
+//Bai tap 38
+
+function back()
+{
+    window.history.back();
+}
+//Bai tap 39
+/*
+    document.write("<p>Browser: ")
+    document.write(navigator.appName + "</p>")
+    document.wrtite("<p>Browser Version: ")
+    document.write(navigator.appVersion + "</p>")
+    document.write("<p>Code: ")
+    document.write(navigator.appCodeName + "</p>")
+    document.write("<p>Platform: ")
+    document.write(navigator.platform + "</p>")
+    document.write("<p>Cookie Enable: ")
+    document.write(navigator.cookieEnabled + "</p>")
+    document.write("<p>Online: ")
+    document.write(navigator.onLine + "</p>")
+*/
+//Bai tap 40
+function myfunction22()
+{
+    alert('Hello');
+}
+//Bai tap 41
+var myelement=document.getElementById("intro");
+document.getElementById("data17").innerHTML="The text from the intro paragraph is "+myelement.innerHTML;
+
+//Bai tap 42
+//var x2=document.getElementsByTagName("p")
+//document.getElementById("data18").innerHTML="The first paragraph (index0) is "+ x2[0].innerHTML;
+
+//Bai tap 43
+var x3=document.getElementsByClassName("intro1");
+document.getElementById("data19").innerHTML="The first paragraph: "+x3[0].innerHTML;
+
+//Bai tap 44
+function myfunction23()
+{
+    document.getElementById("myimg").src = "img2.jpg"
+}
+
+//Bai tap 45
+function myfunction24()
+{
+    document.getElementById("p2").style.color="blue";
+    document.getElementById("p2").style.fontSize="larger";
+    document.getElementById("p2").style.fontFamily="Arial"
+}
+
+//Bai tap 46
+function mouseover(obj)
+{
+    obj.innerHTML="Thank you";
+}
+function mouseout(obj)
+{
+    obj.innerHTML="Mouse over me";
+}
+
+//Bai tap 47
+/*
+function myfunction25()
+{
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
+    var ele = document.getElementById("div1");
+    ele.appendChild(para);
+}
+
+*/
+
+//Bai tap 48
+function myfunction26()
+{
+    var parent = document.getElementById("div2");
+    var child = document.getElementById("p2_1");
+    parent.removeChild(child);
+}
+
+//Bai tap 49
+var str ="Apple, Banana, Kiwi";
+document.getElementById("data20").innerHTML=str.substr(7,6);
+
+//Bai tap 50
+function myfunction27()
+{
+    var upcase = document.getElementById("data21").innerHTML;
+    document.getElementById("data21").innerHTML=upcase.toUpperCase();
+}
+
+//Bai tap 51
+function myfunction28()
+{
+    document.getElementById("data22").innerHTML=Math.random();
+}
+
+//Bai tap 52
+function myfunction29()
+{
+    document.getElementById("data23").innerHTML=Math.E + "<br>" + Math.PI + "<br>"
+}
+
+//Bai tap 53
+var day = new Date();
+document.getElementById("data24").innerHTML=day;
+
+//Bai tap 54
+var day1=new Date();
+document.getElementById("data25").innerHTML=day1.getFullYear();
+
+//Bai tap 55
+function keyup()
+{
+    // lay 2 the HTML
+    var input = document.getElementById("mess");
+    var div = document.getElementById("data26");
+    //gan noi dung vao the HTML
+    div.innerHTML=input.value;
+}
+
+//Bai tap 56
+function myfunction30()
+{
+    alert("You copied completely")
+}
+
+//Bai tap 57
+function myfunction31(x4)
+{
+    x4.style.background = "lightgrey";
+}
+
+//Bai tap 58
+function tinh()
+{
+    //lay 3 o layout
+    var a1 = document.getElementById("a");
+    var b1 = document.getElementById("b");
+    var ketqua= document.getElementById("ketqua");
+    //tinh 2 o dau tien 
+    var tong = parseInt(a1.value) + parseInt(b1.value);
+    //gan gia tri vao o thu 3
+    //kiem ra tong 2 so co bi loi hay ko
+    if (!isNaN(tong))
+    ketqua.value=tong;
 }

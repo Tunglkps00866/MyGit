@@ -4,15 +4,7 @@
                 <meta charset="utf-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Theme</title>
-        
-                <!-- Bootstrap CSS -->
-                <link href="lib/css/bootstrap.min.css" rel="stylesheet">
-                <!-- jQuery -->
-                <script src="lib/js/jquery-3.3.1.min.js"></script>
-                <!-- Bootstrap JavaScript -->
-                <script src="lib/js/bootstrap.min.js"></script>
-                
+                <title>Theme</title>              
             </head>
             <body>   
                     <h1>BT1</h1>
@@ -187,9 +179,121 @@
                     <script>
                         document.write("Screen resolution:"+window.screen.width+"x"+window.screen.height)
                     </script>
+
                     <h1>BT36</h1>
                     <input type="button" onclick="a()" value="Google">
                     <input type="button" onclick="b()" value="Close this window">
+
+                    <h1>BT37</h1>
+                    <form>
+                        <input type="button" onclick="curr_location()" value="Current URL">
+                        <input type="button" onclick="change_location()" value="Change URL">
+                    </form>
+
+                    <h1>BT38</h1>
+                    <a href="PageB.html">Link to page B</a>
+
+                    <h1>BT39</h1>
+                    <form>
+                        <script>
+                                document.write("<p>Browser: ")
+                                document.write(navigator.appName + "</p>")
+                                document.write("<p>Browser Version: ")
+                                document.write(navigator.appVersion + "</p>")
+                                document.write("<p>Code: ")
+                                document.write(navigator.appCodeName + "</p>")
+                                document.write("<p>Platform: ")
+                                document.write(navigator.platform + "</p>")
+                                document.write("<p>Cookie Enable: ")
+                                document.write(navigator.cookieEnabled + "</p>")
+                                document.write("<p>Online: ")
+                                document.write(navigator.onLine + "</p>")
+                            </script>
+                    </form>
+                    
+                    <h1>BT40</h1>
+                    <p>Click "Try it" and wait for 3 seconds, page will alert hello</p>
+                    <button onclick="setTimeout(myfunction22,3000);">Try it</button>
+
+                    <h1>BT41</h1>
+                    <p id="intro">Hello world</p>
+                    <p id="data17"></p>
+
+                    <h1>BT42</h1>
+                    <p>Hello world</p>
+                    <p id="data18"></p>
+
+                    <h1>BT43</h1>
+                    <p class="intro1">The DOM is very useful</p>
+                    <p class="intro1">Hello world</p>
+                    <p id="data19"></p>
+
+                    <h1>BT44</h1>
+                    <img src="img1.jpg" id="myimg"><br/>
+                    <input type="button" onclick="myfunction23()" value="Click">
+
+                    <h1>BT45</h1>
+                    <p id="p1">Hello</p>
+                    <p id="p2">Hello</p>
+                    <button onclick="myfunction24()">Try it</button>
+
+                    <h1>BT46</h1>
+                    <div onmouseover="mouseover(this)" onmouseout="mouseout(this)" style="background-color:yellow;width:120px;height:20px;padding:40px;"> Mouse over me</div>
+
+                    <h1>BT47</h1>
+                    <div id="div1">
+                            <p id="p1_1">This is paragraph</p>
+                            <p id="p1_2">This is another paragraph</p>
+                    </div>
+
+                    <h1>BT48</h1>
+                    <div id="div2">
+                            <p id="p2_1">This is paragraph</p>
+                            <p id="p2_2">This is another paragraph</p>
+                    </div>
+                    <input type="button" onclick="myfunction26()" value="Try it">
+                    
+                    <h1>BT49</h1>
+                    <p>The substr() method extract a part of a string and returns the extracted parts in a new string: </p>
+                    <p id="data20"></p>
+
+                    <h1>BT50</h1>
+                    <p>Convert string to upper case</p>
+                    <button onclick="myfunction27()">Try it</button>
+                    <p id="data21">Hello world</p>
+
+                    <h1>BT51</h1>
+                    <p>Math.random() returns a random number between 0 and 1.</p>
+                    <input type="button" onclick="myfunction28()" value="Try it">
+                    <p id="data22"></p>
+
+                    <h1>BT52</h1>
+                    <p>Math constants are E, PI</p>
+                    <button onclick="myfunction29()">Try it</button>
+                    <p id="data23"></p>
+
+                    <h1>BT53</h1>
+                    <p id="data24"></p>
+
+                    <h1>BT54</h1>
+                    <p>The getFullYear() method returns the full year of date</p>
+                    <p id="data25"></p>
+
+                    <h1>BT55</h1>
+                    <input type="text" id="mess" onkeyup="keyup()">
+                    <div id="data26"></div>
+
+                    <h1>BT56</h1>
+                    <p>Copy this text:</p>
+                    <div oncopy="myfunction30()">Welcome you to my website</div>
+
+                    <h1>BT57</h1>
+                    Enter your name:<input type="text" onfocus="myfunction31(this)">
+
+                    <h1>Bt58</h1>
+                    a: <input type="text" id="a" onkeyup="tinh()">
+                    b: <input type="text" id="b" onkeyup="tinh()">
+                    Result: <input type="text" id="ketqua">
                     <script type="text/JavaScript" src="demo.js"></script>
             </body>
         </html>
