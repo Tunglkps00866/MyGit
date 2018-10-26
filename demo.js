@@ -445,7 +445,7 @@ function tinh()
     //tinh 2 o dau tien 
     var tong = parseInt(a1.value) + parseInt(b1.value);
     //gan gia tri vao o thu 3
-    //kiem ra tong 2 so co bi loi hay ko
+    //kiem tra tong 2 so co bi loi hay ko
     if (!isNaN(tong))
     ketqua.value=tong;
 }
@@ -475,3 +475,61 @@ function myfunction32()
     }
     return true;
 }
+//Bai tap 60
+
+function myfunction33()
+{
+    var kt = document.getElementById("check").value;
+    if (/hello/.test(kt))
+    {
+        document.getElementById("data27").innerHTML=("Trong chuoi co chu hello")
+    }
+    else
+    {
+        document.getElementById("data27").innerHTML=("Trong chuoi khong co chu hello")
+    }
+}
+
+//Bai tap 61
+function myfunction34()
+{
+    var kiemtra1 = document.getElementById("check1").value;
+    if (/n+/.test(kiemtra1))
+    {
+        document.getElementById("data28").innerHTML=("Trong chuoi co chu n");
+    }
+    else
+    { 
+        document.getElementById("data28").innerHTML=("Trong chuoi khong co chu n");
+    }
+}
+//Bai tap 62
+function myfunction35()
+{
+    var patt = /^[\w\d]+@[\w\d]+(\.[\w\d]{2,4}){1,2}$/;
+    var kt1=document.getElementById("mail").value;
+    if (patt.test(kt1))
+    {
+        document.getElementById("data29").innerHTML=("Email hop le");
+    }
+    else
+    {
+        document.getElementById("data29").innerHTML=("Email khong hop le")
+    }
+}
+
+//Bai tap 63
+function myfunction36()
+{
+    var patt1 = /^www+\.[\w\d]+(\.[\w\d]{2,4}){1,2}$/i;
+    var kt2 = document.getElementById("url").value;
+    if(patt1.test(kt2))
+    {
+        document.getElementById("data30").innerHTML="URL hop le";
+    }
+    else
+    {
+        document.getElementById("data30").innerHTML="URL khong hop le";
+    }
+}
+
