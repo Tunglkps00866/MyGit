@@ -449,3 +449,29 @@ function tinh()
     if (!isNaN(tong))
     ketqua.value=tong;
 }
+//Bai tap 59
+function myfunction32()
+{
+    //lay gia tri 
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var repassword = document.getElementById("repass").value;
+    //kiem tra gia tri 
+    if (username=="")
+    {
+        alert("Ban chua nhao ten dang nhap");
+        return false;
+    }
+    if (password=="")
+    {
+        alert("Ban chua nhap mat khau");
+        return false;
+    }
+    if (password!= repassword)
+    {
+        alert("Mat khau nhap lai khong dung");
+        return false;
+
+    }
+    return true;
+}
