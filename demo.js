@@ -566,6 +566,45 @@ function myfunction41()
 }
 function myfunction42()
 {
-    $('#id-textbox1').css("background-color","pink")
+    $('#id-textbox1').css("background-color","pink");
 }
 
+//Bai tap 68
+function myfunction43()
+{
+    $('.cl-paragraph').hide();
+}
+function myfunction44()
+{
+    $('.cl-paragraph').show();
+}
+
+//Bai tap 69
+function myfunction45()
+{
+    $('#id-paragraph').fadeOut(500);
+}
+function myfunction46()
+{
+    $('#id-paragraph').fadeIn(500);
+}
+
+//Bai tap 70
+function myfunction47()
+{
+    $('.cl-paragraph1').slideUp(500);
+}
+function myfunction48()
+{
+    $('.cl-paragraph1').slideDown(500);
+}
+
+//Bai tap 71
+function myfunction49()
+{
+    $('tr:even').css({"background-color":"red","color":"yellow"});
+}
+function myfunction50()
+{
+    $('tr:odd').css({"background-color":"blue","color":"white"});
+}
