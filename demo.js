@@ -533,3 +533,39 @@ function myfunction36()
     }
 }
 
+//Bai tap 64
+function myfunction37()
+{
+    // Cach1: khai bao bien lay gia tri
+    //var textbox = $('#id-textbox');
+    //alert(textbox.val());
+    // Cach2: khai bao truc tiep
+    alert($('#id-textbox').val());
+}
+
+//Bai tap 65
+function myfunction38()
+{
+    $('#div-content').addClass('important');
+}
+
+//Bai tap 66
+function myfunction39()
+{
+    $('#p-content').hide();
+}
+function myfunction40()
+{
+    $('#p-content').show();
+}
+
+//Bai tap 67
+function myfunction41()
+{
+    $('#id-textbox1').css("background-color","yellow");
+}
+function myfunction42()
+{
+    $('#id-textbox1').css("background-color","pink")
+}
+

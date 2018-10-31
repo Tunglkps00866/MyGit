@@ -4,7 +4,8 @@
                 <meta charset="utf-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Theme</title>              
+                <title>Theme</title>
+                <script src="jquery-3.3.1.min.js"></script>              
             </head>
             <body>   
                     <h1>BT1</h1>
@@ -314,14 +315,45 @@
                     <p id="data28"></p>
 
                     <h1>BT62</h1>
-                    <input type="text" id="mail">
+                    <input type="text" id="mail" value="expample@example.com">
                     <input type="button" value="Check" onclick="myfunction35()">
                     <p id="data29"></p>
 
                     <h1>BT63</h1>
-                    <input type="text" id="url">
-                    <input type="button" onclick="myfunction36()" value="Submit">
+                    <input type="text" id="url" value="www.abc.com">
+                    <input type="button" onclick="myfunction36()" value="Check">
                     <p id="data30"></p>
+
+                    <h1>BT64</h1>
+                    <h3>Jquery</h3>
+                    <input type="text" id="id-textbox"><br/>
+                    <input type="button" id="id-button" onclick="myfunction37()" value="Try it">
+
+                    <h1>BT65</h1>
+                    <h3>Jquery</h3>
+                    <style>
+                        .important{
+                            background-color: blue;
+                            color: yellow;
+                            width: 300px;
+                            height: 150px;
+                        }
+                    </style>
+                    <div id="div-content">
+                        Query is a fast, small, and feature-rich Javascript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+                    </div>
+                    <input type="button" id="id-button1" value="Change" onclick="myfunction38()">
+
+                    <h1>BT66</h1>
+                    <h3>Jquery</h3>
+                    <p id="p-content">If you click "Hide" button, I will disappear.</p>
+                    <input type="button" id="id-button-hide" value="Hide" onclick="myfunction39()">
+                    <input type="button" id="id-button-show" value="Show" onclick="myfunction40()">
+
+                    <h1>BT67</h1>
+                    <h3>Jquery</h3>
+                    Enter your name: <input type="text" id="id-textbox1" onkeydown="myfunction41()" onkeyup="myfunction42()">
                     <script type="text/JavaScript" src="demo.js"></script>
+                    
             </body>
         </html>
