@@ -665,3 +665,12 @@ $(document).ready(function()
         $("#url2").attr("href","http://google.com")
     })//dong click
 })//dong ready
+
+//Bai tap 77
+$(document).ready(function()
+{
+    $("#id-button10").click(function()
+    {
+        $("")
+    })
+})
