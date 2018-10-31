@@ -562,11 +562,11 @@ function myfunction40()
 //Bai tap 67
 function myfunction41()
 {
-    $('#id-textbox1').css("background-color","yellow");
+    $('#id-textbox1').css("backgroundColor","yellow");
 }
 function myfunction42()
 {
-    $('#id-textbox1').css("background-color","pink");
+    $('#id-textbox1').css("backgroundColor","pink");
 }
 
 //Bai tap 68
@@ -602,9 +602,66 @@ function myfunction48()
 //Bai tap 71
 function myfunction49()
 {
-    $('tr:even').css({"background-color":"red","color":"yellow"});
+    $('tr:even').css({"backgroundColor":"red","color":"yellow"});
 }
 function myfunction50()
 {
-    $('tr:odd').css({"background-color":"blue","color":"white"});
+    $('tr:odd').css({"backgroundColor":"blue","color":"white"});
 }
+
+//Bai tap 72
+$(document).ready(function()
+{
+    $("#id-button2").click(function()
+    {
+        alert("Text: " + $("#id-content").text())
+    })
+    $("#id-button3").click(function()
+    {
+        alert("Text: " + $("#id-content").html())
+    })//dong click
+})//dong ready
+
+//Bai tap 73
+$(document).ready(function()
+{
+    $("#id-button4").click(function()
+    {
+        alert("Value: " + $("#id-content1").val());
+    })
+})
+
+//Bai tap 74
+$(document).ready(function()
+{
+    $("#id-button5").click(function()
+    {
+        alert($("#url1").attr("href"));
+    })//dong click
+})//dong ready
+
+//Bai tap 75
+$(document).ready(function()
+{
+    $("#id-button6").click(function()
+    {
+        $("#id-content2").text("Hello World");
+    })
+    $("#id-button7").click(function()
+    {
+        $("#id-content3").html("<b>Hello World</b>");
+    })
+    $("#id-button8").click(function()
+    {
+        $("#id-content4").val("Green academy");
+    })//dong click
+})//dong ready
+
+//Bai tap 76
+$(document).ready(function()
+{
+    $("#id-button9").click(function()
+    {
+        $("#url2").attr("href","http://google.com")
+    })//dong click
+})//dong ready
