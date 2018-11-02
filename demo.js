@@ -671,6 +671,153 @@ $(document).ready(function()
 {
     $("#id-button10").click(function()
     {
-        $("")
+        $(".cl-paragraph2").append("<b>Append Text<b>");
+    })
+    $("#id-button11").click(function()
+    {
+        $("#ol-content").append("<li><b>Append item</b></li>");
+    })//dong click  
+})//dong ready
+
+//Bai tap 78
+$(document).ready(function()
+{
+    $("#id-button12").click(function()
+    {
+        $(".cl-paragraph3").prepend("<b>Prepend Text<b>");
+    })
+    $("#id-button13").click(function()
+    {
+        $("#ol-content1").prepend("<li><b>Prepend item</b></li>");
+    })//dong click  
+})//dong ready
+
+//Bai tap 79
+$(document).ready(function()
+{
+    $("#id-button14").click(function()
+    {
+        $("#img-content").before("<b>Before<b>");
+    })
+    $("#id-button15").click(function()
+    {
+        $("#img-content").after("<i>After<i>");
+    })//dong click  
+})//dong ready
+
+//Bai tap 80
+$(document).ready(function()
+{
+    $("#id-button16").click(function()
+    {
+        $("#div3").remove();
+    })//dong click
+})//dong ready
+
+//Bai tap 81
+$(document).ready(function()
+{
+    $("#id-button17").click(function()
+    {
+        $("#div4").empty();
+    })//dong click
+})//dong ready
+
+//Bai tap 82
+$(document).ready(function()
+{
+    $("#id-button18").click(function()
+    {
+        $(".cl-paragraph4").remove();
+    })//dong click
+})//dong ready
+
+//Bai tap 83
+$(document).ready(function()
+{
+    $("#id-button19").click(function()
+    {
+       $(".cl-heading,#id-content5,#id-content6").css("color","blue");
+       $("#div5").css({"font-weight":"bold","font-size":"xx-large"});
+    })//dong function
+})//dong ready
+
+//Bai tap 84
+$(document).ready(function()
+{
+    $("#id-button20").click(function()
+    {
+       $("#id-heading,#id-heading1,#id-content7").removeClass("blue")
+    })//dong function
+})//dong ready
+
+//Bai tap 85
+$(document).ready(function()
+{
+    $("#id-button21").click(function()
+    {
+       $("#id-heading2,#id-heading3,#id-content8,#id-content9").toggleClass("blue")
+    })//dong function
+})//dong ready
+
+//Bai tap 86
+$(document).ready(function()
+{
+    $("#id-button22").click(function()
+    {
+        $(".cl-paragraph5").css({"background-color":"yellow","color":"blue","font-size":"xx-large"})
     })
 })
+
+//Bai tap 87
+$(document).ready(function()
+{
+    $("#id-content10").click(function()
+    {
+        $(this).hide();
+    })
+    $("#id-content11").click(function()
+    {
+        $(this).hide();
+    })//dong click
+})//dong ready
+
+//Bai tap 88
+$(document).ready(function()
+{
+    $(".cl-paragraph6").focus(function()
+    {
+        $(this).css("background-color","#cccccc");
+    })
+    $(".cl-paragraph6").blur(function()
+    {
+        $(this).css("background-color","#ffffff")
+    })//dong click
+})//dong ready
+
+//Bai tap 89
+$(document).ready(function()
+{
+    $("#id-content12").mouseover(function()
+    {
+        $(this).css({"background-color":"yellow","color":"blue"})
+    })
+    $("#id-content12").mouseout(function()
+    {
+        $(this).css({"background-color":"blue","color":"white"})
+    })
+    $("#id-content12").click(function()
+    {
+        $(this).css({"background-color":"gray","color":"white"})
+    })//dong function
+})//dong ready
+
+//Bai tap 90
+keypr = 0
+$(document).ready(function()
+{
+    $("#id-content13").keypress(function ()
+    { 
+        $("#id-span").text(keypr +=1);    
+    })//dong function
+})//dong ready
